@@ -13,8 +13,23 @@ import android.widget.TextView;
 import java.io.IOException;
 import java.io.InputStream;
 
+/**
+ * This creates the event details so once the user has clicked
+ * the list item they get brought to this event.
+ *
+ * @author Brian Wegener
+ * @version 1.0
+ *
+ * Created on 9.21.2017
+ */
 public class EventDetailsActivity extends AppCompatActivity {
 
+    /**
+     * This is what happens when the user has clicked the item
+     * and is sent to the event details activity.
+     *
+     * @param savedInstanceState what happens when this view is first loaded.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +64,12 @@ public class EventDetailsActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * This is what happens when the back button
+     * is clicked and sent back to the event list.
+     *
+     * @param v this is the view that is sent.
+     */
     protected void goBackToList(View v)
     {
         // Terminates the current activity (terminate the details activity)
